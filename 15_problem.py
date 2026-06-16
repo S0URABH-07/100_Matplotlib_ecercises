@@ -1,3 +1,4 @@
+# Draw two Bar plot without overlape
 import matplotlib.pyplot as plt
 import numpy as np
 
