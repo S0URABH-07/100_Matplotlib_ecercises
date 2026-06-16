@@ -1,4 +1,4 @@
-# Draw two Bar plot in one code
+# Draw two Bar plot with overlape
 import matplotlib.pyplot as plt
 x = ["a","b","c","d","e","f"]
 y = [ 10,15,20,25,30,35]
