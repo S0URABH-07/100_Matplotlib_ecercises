@@ -1,2 +1,3 @@
 Bins -> How many groups to divide the data
 color –> Fill color of the histogram
+edgecolor –> Border color of bars
