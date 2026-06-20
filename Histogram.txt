@@ -5,3 +5,5 @@ linewidth –> Thickness of the border
 alpha –> Transparency
 label –> Legend name
 density=True –> Normalize the histogram
+cumulative=True –> Running total
+             * Also count previous level
