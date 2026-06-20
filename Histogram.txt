@@ -8,3 +8,5 @@ density=True –> Normalize the histogram
 cumulative=True –> Running total
              * Also count previous level
 orientation –> Direction of the histogram
+rwidth –> Relative width of the bars
+             * Creates spacing between bars, making the plot cleaner.
