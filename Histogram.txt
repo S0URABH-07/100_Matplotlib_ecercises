@@ -3,3 +3,4 @@ color –> Fill color of the histogram
 edgecolor –> Border color of bars
 linewidth –> Thickness of the border
 alpha –> Transparency
+label –> Legend name
