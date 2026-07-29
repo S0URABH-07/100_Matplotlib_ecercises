@@ -4,12 +4,7 @@ import seaborn as sns
 
 df = pd.read_csv("HR_Analytics.csv")
 
-analysis = (
-    df.groupby("JobRole").agg(
-          AverageSalary=("MonthlyIncome", "mean"),
-          AverageSatisfaction=("JobSatisfaction", "mean")
-      ).sort_values("AverageSalary", ascending=False)
-)
+analysis = (df.groupby("JobRole").agg(AverageSalary=("MonthlyIncome", "mean"),AverageSatisfaction=("JobSatisfaction", "mean")).sort_values("AverageSalary", ascending=False))
 
 print(analysis)
 plt.figure(figsize=(12,6))
