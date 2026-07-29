@@ -4,11 +4,7 @@ import seaborn as sns
 
 df = pd.read_csv("HR_Analytics.csv")
 
-salary = (
-    df.groupby(["Department", "EducationField"])["MonthlyIncome"]
-      .mean()
-      .reset_index()
-)
+salary = (df.groupby(["Department", "EducationField"])["MonthlyIncome"].mean().reset_index())
 
 pivot = salary.pivot(
     index="Department",
