@@ -6,11 +6,7 @@ df = pd.read_csv("HR_Analytics.csv")
 
 salary = (df.groupby(["Department", "EducationField"])["MonthlyIncome"].mean().reset_index())
 
-pivot = salary.pivot(
-    index="Department",
-    columns="EducationField",
-    values="MonthlyIncome"
-)
+pivot = salary.pivot(index="Department",columns="EducationField",values="MonthlyIncome")
 
 pivot.plot(
     kind="bar",
