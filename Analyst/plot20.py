@@ -7,12 +7,7 @@ analysis = (df.groupby("PerformanceRating").agg(AverageSalaryHike=("PercentSalar
 
 plt.figure(figsize=(8,5))
 
-plt.plot(
-    analysis["PerformanceRating"],
-    analysis["AverageSalaryHike"],
-    marker="o",
-    linewidth=3
-)
+plt.plot(analysis["PerformanceRating"],analysis["AverageSalaryHike"],marker="o",linewidth=3)
 
 plt.xlabel("Performance Rating")
 plt.ylabel("Average Salary Hike (%)")
