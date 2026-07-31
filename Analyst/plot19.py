@@ -8,10 +8,7 @@ salary = (df.groupby(["Department", "EducationField"])["MonthlyIncome"].mean().r
 
 pivot = salary.pivot(index="Department",columns="EducationField",values="MonthlyIncome")
 
-pivot.plot(
-    kind="bar",
-    figsize=(12,6)
-)
+pivot.plot(kind="bar",figsize=(12,6))
 
 plt.title("Average Salary by Department and Education Field")
 plt.ylabel("Average Monthly Income")
